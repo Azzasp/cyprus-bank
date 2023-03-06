@@ -1,4 +1,4 @@
-package com.cyprus.banking.models;
+package com.cyprus.banking.models.usuarios;
 
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
