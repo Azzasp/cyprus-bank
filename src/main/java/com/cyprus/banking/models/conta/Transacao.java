@@ -29,6 +29,8 @@ public class Transacao {
     private Double valor;
 //    TODO: Analisar dinamica do comprovante
     private int comprovante;
+    @OneToOne
+    private TipoTransacao tipoTransacao;
 
     @Embeddable
     @RequiredArgsConstructor
