@@ -32,4 +32,11 @@ public class Transacao {
     @JoinColumn(name = "TipoTransacao", referencedColumnName = "id_tipoTransacao")
     private TipoTransacao tipoTransacao;
 
+    public Transacao(Conta remetente, Conta destinatario, Date date, Double valor, TipoTransacao tipoTransacao) {
+        this.remetente = remetente;
+        this.destinatario = destinatario;
+        this.date = date;
+        this.valor = valor;
+        this.tipoTransacao = tipoTransacao;
+    }
 }

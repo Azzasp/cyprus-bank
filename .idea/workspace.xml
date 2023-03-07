@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ab6346a8-6ec4-4787-9157-6ab81322cada" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/TipoTransacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/TipoTransacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/repositorios/TransacaoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/repositorios/TransacaoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Transacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/repositorios/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/repositorios/TipoTransacaoRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
