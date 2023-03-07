@@ -17,7 +17,7 @@ public class TipoTransacao {
     @Id
     @SequenceGenerator(name = "id_tipoTransacao", allocationSize = 1, sequenceName = "id_sequence")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_sequence")
-    private Long id_tipoTransacao;
+    private Integer id_tipoTransacao;
     private String descricao;
 
 
