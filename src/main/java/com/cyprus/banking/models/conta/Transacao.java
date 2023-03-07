@@ -1,43 +1,35 @@
 package com.cyprus.banking.models.conta;
 
 import jakarta.persistence.*;
-import jakarta.validation.Constraint;
 import lombok.*;
 
 import java.util.Date;
 
 @Entity
-@IdClass(Transacao.TransacaoId.class)
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 public class Transacao {
 
-    @Id
-    @ManyToMany(targetEntity = Conta.class)
+    @ManyToOne(targetEntity = Conta.class)
     @JoinColumn(name = "remetente",
-            referencedColumnName = "id_conta",
-            unique = true)
+            referencedColumnName = "id_conta")
     private Conta remetente;
-    @Id
     @JoinColumn(name = "destinatario",
-            referencedColumnName = "id_conta",
-            unique = true)
+            referencedColumnName = "id_conta")
+    @ManyToOne(targetEntity = Conta.class)
     private Conta destinatario;
     private Date date;
     private Double valor;
-//    TODO: Analisar dinamica do comprovante
-    private int comprovante;
+//    TODO: Analisar dinâmica do comprovante
+    @Id
+    @SequenceGenerator(name = "comprovante", allocationSize = 1, sequenceName = "id_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_sequence")
+    private Integer comprovante;
+
     @OneToOne
+    @JoinColumn(name = "TipoTransacao", referencedColumnName = "id_tipoTransacao")
     private TipoTransacao tipoTransacao;
 
-    @Embeddable
-    @RequiredArgsConstructor
-    @Getter
-    @Setter
-    public static class TransacaoId{
-        private Conta remetente;
-        private Conta destinatario;
-    }
 }

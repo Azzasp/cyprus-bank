@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab6346a8-6ec4-4787-9157-6ab81322cada" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/TipoTransacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Transacao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -94,5 +94,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
