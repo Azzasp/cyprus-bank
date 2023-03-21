@@ -1,4 +1,4 @@
-package com.cyprus.banking.models.gerente;
+package com.cyprus.banking.models.usuarios.gerente;
 
 import org.springframework.data.annotation.Id;
 

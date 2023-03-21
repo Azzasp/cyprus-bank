@@ -15,8 +15,8 @@ import lombok.Setter;
 @Table(name = "conta")
 public class Conta {
 
-@Id
-@SequenceGenerator(name = "id_conta", allocationSize = 1, sequenceName = "id_sequence")
+	@Id
+	@SequenceGenerator(name = "id_conta", allocationSize = 1, sequenceName = "id_sequence")
 	private int idConta;
 	private int NumeroConta;
 	private double Saldo;

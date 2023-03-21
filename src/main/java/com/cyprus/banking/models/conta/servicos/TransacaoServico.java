@@ -1,9 +1,8 @@
 package com.cyprus.banking.models.conta.servicos;
 
-import com.cyprus.banking.models.conta.Conta;
+import com.cyprus.banking.models.Conta;
 import com.cyprus.banking.models.conta.TipoTransacao;
 import com.cyprus.banking.models.conta.Transacao;
-import com.cyprus.banking.models.conta.repositorios.TipoTransacaoRepository;
 import com.cyprus.banking.models.conta.repositorios.TransacaoRepository;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,7 +23,7 @@ public class TransacaoServico {
     private TransacaoRepository transacaoRepository;
 
     public Transacao criarTransacao(Conta destinatario, Conta remetente, Double valor, TipoTransacao tipoTransacao){
-        if(destinatario.getId_conta().equals(remetente.getId_conta())) throw new IllegalStateException();
+        if(destinatario.getIdConta() == remetente.getIdConta()) throw new IllegalStateException();
 
         var transacao = new Transacao(remetente, destinatario, new Date(), valor, tipoTransacao);
         return transacaoRepository.save(transacao);
@@ -35,7 +34,7 @@ public class TransacaoServico {
     }
 
     private List<Transacao> visualizarTodasTransacoes(Conta conta){
-        return transacaoRepository.findByRemetente_Id_conta(conta.getId_conta());
+        return transacaoRepository.findByRemetente_Id_conta(conta.getIdConta());
     }
 
 

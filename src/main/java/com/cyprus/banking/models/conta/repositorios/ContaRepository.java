@@ -1,4 +1,4 @@
-package com.cyprus.banking.repositorios;
+package com.cyprus.banking.models.conta.repositorios;
 
 import com.cyprus.banking.models.Conta;
 import com.cyprus.banking.models.TipoConta;

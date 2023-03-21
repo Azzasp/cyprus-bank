@@ -1,5 +1,6 @@
 package com.cyprus.banking.models.conta;
 
+import com.cyprus.banking.models.Conta;
 import jakarta.persistence.*;
 import lombok.*;
 
