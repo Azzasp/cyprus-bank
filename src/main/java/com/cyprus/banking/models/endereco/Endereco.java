@@ -1,11 +1,6 @@
 package com.cyprus.banking.models.endereco;
 
-import org.springframework.data.annotation.Id;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,10 +8,11 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Endereco {
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(updatable = false, nullable = false)
-	private int id_endereco;
+	@SequenceGenerator(name = "id_endereco", allocationSize = 1, sequenceName = "id_sequence")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_sequence")
+	private Integer id_endereco;
 	@Column
 	private String cep;
 	@Column

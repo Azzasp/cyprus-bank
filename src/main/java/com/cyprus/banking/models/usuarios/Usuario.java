@@ -1,5 +1,6 @@
 package com.cyprus.banking.models.usuarios;
 
+import com.cyprus.banking.models.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,6 +21,10 @@ public abstract class Usuario {
     private int telefone;
     private String email;
     private String senha;
+
+    @ManyToOne
+    @JoinColumn(name = "id_endereco", referencedColumnName = "id_endereco")
+    private Endereco endereco;
 
     public Usuario(String nome, String cpf, String rg, int telefone, String email, String senha) {
         this.nome = nome;

@@ -1,9 +1,8 @@
-package com.cyprus.banking.servicos;
+package com.cyprus.banking.models.conta.servicos;
 
-import com.cyprus.banking.models.Conta;
-import com.cyprus.banking.models.TipoConta;
-import com.cyprus.banking.repositorios.ContaRepository;
-import com.cyprus.banking.repositorios.tipoContaRepository;
+import com.cyprus.banking.models.conta.Conta;
+import com.cyprus.banking.models.conta.TipoConta;
+import com.cyprus.banking.models.conta.repositorios.ContaRepository;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -12,6 +11,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -27,16 +27,9 @@ public class ContaServices {
 	
 	private ContaRepository contaRepo;
 	
-	public Conta criarConta(
-		    @NotNull int id_Conta,
-		    @NotNull @Positive int numeroConta,
-		    @NotNull @Positive double saldo,
-		    @NotNull @Positive int cartao,
-		    @NotNull String chaveSec,
-		    @NotNull TipoConta tipo_conta
-		) {
-		    var conta = new Conta(id_Conta, saldo, cartao, chaveSec, tipo_conta);
-		    return contaRepo.save(conta);
+	public ResponseEntity<Conta> criarConta(Conta conta) {
+			contaRepo.save(conta);
+		    return ResponseEntity.ok().body(conta);
 		}
 
 	

@@ -1,6 +1,6 @@
 package com.cyprus.banking.models.usuarios.gerente.servicos;
 
-import com.cyprus.banking.models.Conta;
+import com.cyprus.banking.models.conta.Conta;
 import com.cyprus.banking.models.conta.repositorios.*;
 import com.cyprus.banking.models.usuarios.cliente.repositorios.ClienteRepository;
 import com.cyprus.banking.models.usuarios.cliente.repositorios.DependenteRepository;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class GerenteServico {
+public class GerenteServices {
 
 	private ContaRepository contaRepository;
 	private ClienteRepository clienteRepository;

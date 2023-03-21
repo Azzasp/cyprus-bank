@@ -1,9 +1,8 @@
 package com.cyprus.banking.models.conta.repositorios;
 
-import com.cyprus.banking.models.Conta;
-import com.cyprus.banking.models.TipoConta;
+
+import com.cyprus.banking.models.conta.Conta;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ClienteServico {
+public class ClienteServices {
 
     private final ClienteRepository clienteRepository;
     private final DependenteRepository dependenteRepository;

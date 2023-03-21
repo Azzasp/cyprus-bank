@@ -1,25 +1,31 @@
 package com.cyprus.banking.models.usuarios.gerente;
 
+import com.cyprus.banking.models.conta.Conta;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
 import com.cyprus.banking.models.usuarios.Usuario;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import lombok.Getter;
 import lombok.Setter;
 
 
 
+
+@Entity
+@Table(name = "gerente")
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@Entity
 public class Gerente extends Usuario{
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(updatable = false, nullable = false)
-	private int id_gerente;
+
+	public Gerente(String nome, String cpf, String rg, int telefone, String email, String senha) {
+		super(nome, cpf, rg, telefone, email, senha);
+	}
+
+	@OneToMany
+	private Conta conta;
 }

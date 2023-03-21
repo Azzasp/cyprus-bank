@@ -1,8 +1,7 @@
-package com.cyprus.banking.models;
+package com.cyprus.banking.models.conta;
 
-import com.cyprus.banking.models.TipoConta;
-import com.cyprus.banking.utils.Utils;
-
+import com.cyprus.banking.models.conta.TipoConta;
+import com.cyprus.banking.models.usuarios.gerente.Gerente;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.SequenceGenerator;
@@ -17,11 +16,16 @@ public class Conta {
 
 	@Id
 	@SequenceGenerator(name = "id_conta", allocationSize = 1, sequenceName = "id_sequence")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id_sequence")
 	private Integer id_conta;
 	private int NumeroConta;
 	private double Saldo;
 	private int Cartao;
 	private String ChaveSec;
+
+	@ManyToOne
+	@JoinColumn(name = "id_gerente", referencedColumnName = "id_usuario")
+	private Gerente gerente;
 	
 	private static int counter = 1000;
 	
@@ -33,7 +37,6 @@ public class Conta {
 	}
 	
 	public Conta(int idConta, double Saldo, int Cartao, String ChaveSec, TipoConta tipo_conta) {
-		super();
 		this.id_conta = idConta;
 		this.NumeroConta = counter;
 		this.Saldo = Saldo;
@@ -41,10 +44,7 @@ public class Conta {
 		this.ChaveSec = ChaveSec;
 		counter += 1;
 	}
-	
-	public String mostrarSaldo() {
-		return "nSaldo disponível em conta: " + Utils.doubleToString(this.Saldo);
-	}
+
 	
 	
 }
