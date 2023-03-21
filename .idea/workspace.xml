@@ -7,15 +7,10 @@
     <list default="true" id="ab6346a8-6ec4-4787-9157-6ab81322cada" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Conta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Transacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/Transacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/repositorios/ContaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/repositorios/ContaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/ContaServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/ContaServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/TransacaoServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/TransacaoServico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/endereco/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/endereco/Endereco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/cliente/servicos/ClienteServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/cliente/servicos/ClienteServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/cliente/Dependente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/cliente/Dependente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/gerente/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/gerente/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/gerente/servicos/GerenteServico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/usuarios/gerente/servicos/GerenteServices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

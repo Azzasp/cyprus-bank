@@ -30,7 +30,7 @@ public class Conta {
 	private static int counter = 1000;
 	
 	@OneToOne
-	@JoinColumn(name = "TipoConta", referencedColumnName = "id_tipoConta")
+	@JoinColumn(name = "tipo_conta", referencedColumnName = "id_tipoConta")
 	private TipoConta tipo_conta;
 	
 	public Conta() {

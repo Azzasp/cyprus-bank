@@ -1,5 +1,7 @@
 package com.cyprus.banking.models.usuarios.cliente;
 
+import com.cyprus.banking.models.conta.Conta;
+import com.cyprus.banking.models.endereco.Endereco;
 import com.cyprus.banking.models.usuarios.Usuario;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
@@ -18,8 +20,9 @@ import lombok.Setter;
 @Setter
 public class Dependente extends Usuario {
 
-    public Dependente(String nome, String cpf, String rg, int telefone, String email, String senha) {
-        super(nome, cpf, rg, telefone, email, senha);
+    public Dependente(String nome, String cpf, String rg, int telefone, String email, String senha, Endereco endereco, Conta conta, Cliente cliente) {
+        super(nome, cpf, rg, telefone, email, senha, endereco, conta);
+        this.cliente = cliente;
     }
 
     @ManyToOne

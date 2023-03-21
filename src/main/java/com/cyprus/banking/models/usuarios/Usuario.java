@@ -1,5 +1,6 @@
 package com.cyprus.banking.models.usuarios;
 
+import com.cyprus.banking.models.conta.Conta;
 import com.cyprus.banking.models.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
@@ -26,12 +27,28 @@ public abstract class Usuario {
     @JoinColumn(name = "id_endereco", referencedColumnName = "id_endereco")
     private Endereco endereco;
 
-    public Usuario(String nome, String cpf, String rg, int telefone, String email, String senha) {
+    @OneToOne
+    @JoinColumn(name = "id_conta", referencedColumnName = "id_conta")
+    private Conta conta;
+
+    public Usuario(String nome, String cpf, String rg, int telefone, String email, String senha, Endereco endereco, Conta conta) {
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;
         this.telefone = telefone;
         this.email = email;
         this.senha = senha;
+        this.endereco = endereco;
+        this.conta = conta;
+    }
+
+    public Usuario(String nome, String cpf, String rg, int telefone, String email, String senha, Endereco endereco) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.telefone = telefone;
+        this.email = email;
+        this.senha = senha;
+        this.endereco = endereco;
     }
 }
