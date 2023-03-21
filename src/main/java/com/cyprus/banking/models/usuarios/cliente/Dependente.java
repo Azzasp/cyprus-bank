@@ -6,12 +6,16 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "dependente")
+@Getter
+@Setter
 public class Dependente extends Usuario {
 
     public Dependente(String nome, String cpf, String rg, int telefone, String email, String senha) {

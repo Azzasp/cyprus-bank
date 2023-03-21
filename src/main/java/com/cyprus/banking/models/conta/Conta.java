@@ -17,7 +17,7 @@ public class Conta {
 
 	@Id
 	@SequenceGenerator(name = "id_conta", allocationSize = 1, sequenceName = "id_sequence")
-	private int idConta;
+	private Integer id_conta;
 	private int NumeroConta;
 	private double Saldo;
 	private int Cartao;
@@ -34,7 +34,7 @@ public class Conta {
 	
 	public Conta(int idConta, double Saldo, int Cartao, String ChaveSec, TipoConta tipo_conta) {
 		super();
-		this.idConta = idConta;
+		this.id_conta = idConta;
 		this.NumeroConta = counter;
 		this.Saldo = Saldo;
 		this.Cartao = Cartao;
