@@ -1,5 +1,6 @@
 package com.cyprus.banking.models.usuarios.cliente.servicos;
 
+import com.cyprus.banking.models.usuarios.cliente.Cliente;
 import com.cyprus.banking.models.usuarios.cliente.Dependente;
 import com.cyprus.banking.models.usuarios.cliente.repositorios.ClienteRepository;
 import com.cyprus.banking.models.usuarios.cliente.repositorios.DependenteRepository;
@@ -23,7 +24,7 @@ public class ClienteServices {
     }
 
     public ResponseEntity<List<Dependente>> visualizarDependentes(Integer id_cliente){
-        List<Dependente> dependentes = dependenteRepository.findAllDependentesByClienteID(id_cliente);
+        List<Dependente> dependentes = dependenteRepository.findAllDependentesByCliente(id_cliente);
         return ResponseEntity.ok().body(dependentes);
     }
 
@@ -32,10 +33,10 @@ public class ClienteServices {
         return ResponseEntity.ok().body(dependente);
     }
 
-    public ResponseEntity deletarConta(Integer id_conta){
+    public ResponseEntity deletarConta(Cliente cliente){
         try {
-            clienteRepository.deleteById(id_conta);
-            dependenteRepository.deleteDependenteByClienteID(id_conta);
+            clienteRepository.deleteById(cliente.getId_usuario());
+            dependenteRepository.deleteDependenteByClienteID(cliente);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }

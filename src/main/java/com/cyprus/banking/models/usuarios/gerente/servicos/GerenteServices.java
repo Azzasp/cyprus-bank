@@ -2,6 +2,7 @@ package com.cyprus.banking.models.usuarios.gerente.servicos;
 
 import com.cyprus.banking.models.conta.Conta;
 import com.cyprus.banking.models.conta.repositorios.*;
+import com.cyprus.banking.models.usuarios.cliente.Cliente;
 import com.cyprus.banking.models.usuarios.cliente.repositorios.ClienteRepository;
 import com.cyprus.banking.models.usuarios.cliente.repositorios.DependenteRepository;
 import org.springframework.http.ResponseEntity;
@@ -26,10 +27,10 @@ public class GerenteServices {
 		return ResponseEntity.notFound().build();
 	}
 
-	public void excluirCliente(Integer id) {
+	public void excluirCliente(Cliente cliente) {
 		try {
-			clienteRepository.deleteById(id);
-			dependenteRepository.deleteDependenteByClienteID(id);
+			clienteRepository.deleteById(cliente.getId_usuario());
+			dependenteRepository.deleteDependenteByClienteID(cliente);
 		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}

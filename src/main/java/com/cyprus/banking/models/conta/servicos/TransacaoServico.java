@@ -34,7 +34,7 @@ public class TransacaoServico {
     }
 
     private List<Transacao> visualizarTodasTransacoes(Conta conta){
-        return transacaoRepository.findByRemetente_Id_conta(conta.getId_conta());
+        return transacaoRepository.findAllByRemetente(conta.getId_conta());
     }
 
 

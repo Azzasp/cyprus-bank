@@ -6,9 +6,12 @@ import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface TransacaoRepository extends JpaRepository<Transacao, Integer> {
-    List<Transacao> findByRemetente_Id_conta(@NonNull Integer id_conta);
+    List<Transacao> findAllByRemetente(@NonNull Integer id_conta);
+
+
 
 }
