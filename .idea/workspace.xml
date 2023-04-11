@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab6346a8-6ec4-4787-9157-6ab81322cada" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/ContaServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/ContaServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "18",
     "last_opened_file_path": "D:/Estudo/Java/cyprus-bank",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "show.migrate.to.gradle.popup": "false"
@@ -61,7 +61,7 @@
   <component name="RunManager">
     <configuration name="BankingApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cyprus.banking.BankingApplication" />
-      <module name="banking" />
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cyprus.banking.*" />
