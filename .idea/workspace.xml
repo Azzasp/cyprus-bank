@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ab6346a8-6ec4-4787-9157-6ab81322cada" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/ContaServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/models/conta/servicos/ContaServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/cliente/repositorios/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/cliente/repositorios/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/ui/UI_Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/UI_Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -52,8 +55,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Estudo/Java/cyprus-bank",
+    "git-widget-placeholder": "multi-moduling",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_directory_selection": "D:/Estudo/Java/cyprus-bank/src/main/java/com/cyprus/banking",
+    "last_opened_file_path": "D:/Estudo/Java/banking",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "show.migrate.to.gradle.popup": "false"
   }
@@ -61,7 +69,7 @@
   <component name="RunManager">
     <configuration name="BankingApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cyprus.banking.BankingApplication" />
-      <module name="banking" />
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cyprus.banking.*" />
