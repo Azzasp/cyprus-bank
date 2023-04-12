@@ -1,6 +1,5 @@
 package com.cyprus.banking;
 
-import com.cyprus.banking.ui.UI_Application;
 import javafx.application.Application;
 
 

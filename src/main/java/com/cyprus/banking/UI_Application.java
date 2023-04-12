@@ -1,4 +1,4 @@
-package com.cyprus.banking.ui;
+package com.cyprus.banking;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -29,7 +29,7 @@ public class UI_Application extends Application {
         applicationContext.publishEvent(new StageReadyEvent(stage));
     }
 
-    static class StageReadyEvent extends ApplicationEvent {
+    public static class StageReadyEvent extends ApplicationEvent {
         public StageReadyEvent(Stage stage) {
             super(stage);
         }

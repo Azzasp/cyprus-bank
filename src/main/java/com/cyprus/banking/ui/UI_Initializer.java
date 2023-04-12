@@ -1,6 +1,6 @@
 package com.cyprus.banking.ui;
 
-import com.cyprus.banking.ui.UI_Application.StageReadyEvent;
+import com.cyprus.banking.UI_Application.StageReadyEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
