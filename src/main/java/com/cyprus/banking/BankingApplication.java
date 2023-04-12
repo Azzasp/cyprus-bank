@@ -1,13 +1,13 @@
 package com.cyprus.banking;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.cyprus.banking.ui.UI_Application;
+import javafx.application.Application;
 
-@SpringBootApplication
+
 public class BankingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BankingApplication.class, args);
+		Application.launch(UI_Application.class, args);
 	}
 
 }
