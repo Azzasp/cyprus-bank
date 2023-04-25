@@ -18,6 +18,7 @@ public class RegisterRequest {
     private String email;
     private String senha;
     private Endereco endereco;
+    private Conta conta;
 
 
 }

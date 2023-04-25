@@ -5,8 +5,6 @@ import com.cyprus.banking.backend.models.usuarios.cliente.repositorios.Dependent
 import com.cyprus.banking.backend.models.usuarios.gerente.repositorios.GerenteRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.IllegalFormatException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -27,7 +25,7 @@ public class ValidatorService {
         return matcher.find();
     }
 
-    public boolean validateCPF(String input){
+    public boolean cpfValidator(String input){
         String CPF_REGEX = "^\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}$";
         Pattern pattern = Pattern.compile(CPF_REGEX, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(input);

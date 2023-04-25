@@ -1,7 +1,9 @@
 package com.cyprus.banking.backend.models.usuarios.gerente.repositorios;
 
 import java.util.List;
+import java.util.Optional;
 
+import com.cyprus.banking.backend.models.usuarios.cliente.Cliente;
 import com.cyprus.banking.backend.models.usuarios.gerente.Gerente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -13,4 +15,5 @@ public interface GerenteRepository extends JpaRepository<Gerente, Integer> {
 	@Query("select (count(g) > 0) from Gerente g where g.email = ?1")
 	boolean existEmail(@NonNull String email);
 
+	Optional<Gerente> findByEmail(@NonNull String email);
 }

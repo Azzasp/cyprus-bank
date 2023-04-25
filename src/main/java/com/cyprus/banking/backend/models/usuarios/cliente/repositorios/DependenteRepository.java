@@ -10,6 +10,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface DependenteRepository extends JpaRepository<Dependente, Integer> {
     @Transactional
@@ -20,7 +21,7 @@ public interface DependenteRepository extends JpaRepository<Dependente, Integer>
     @Query("select (count(d) > 0) from Dependente d where d.email = ?1")
     boolean existEmail(@NonNull String email);
 
-
+    Optional<Dependente> findByEmail(@NonNull String email);
 
     List<Dependente> findAllDependentesByCliente(@Nullable Integer id_usuario);
 
