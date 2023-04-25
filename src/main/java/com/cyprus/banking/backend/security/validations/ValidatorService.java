@@ -1,11 +1,12 @@
 package com.cyprus.banking.backend.security.validations;
 
-import com.cyprus.banking.backend.models.usuarios.cliente.Cliente;
 import com.cyprus.banking.backend.models.usuarios.cliente.repositorios.ClienteRepository;
 import com.cyprus.banking.backend.models.usuarios.cliente.repositorios.DependenteRepository;
 import com.cyprus.banking.backend.models.usuarios.gerente.repositorios.GerenteRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.IllegalFormatException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,6 +32,30 @@ public class ValidatorService {
         Pattern pattern = Pattern.compile(CPF_REGEX, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(input);
         return matcher.find();
+    }
+
+    public boolean passwordValidator(String password){
+         String[] p = password.split("");
+         return p.length == 8;
+         /*
+            Se a senha tiver 8 caracteres retorna verdadeiro e a senha é validada.
+            Caso a senha não tenha 8 caracteres, retornará falso
+         */
+    }
+
+    public boolean chaveSecValidator(String chaveSec){
+        try{
+            Integer c = Integer.parseInt(chaveSec); // Verifica se são numeros
+            String[] p = chaveSec.split(""); // Verifica o tamanho
+
+            return p.length == 6;
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return false;
+        }
+
+
+
     }
 
 }
