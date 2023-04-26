@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.cyprus.banking.ui.controllers.UI_Controller">
-
-</VBox>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="609.0" fitWidth="436.0" layoutX="-3.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <image>
+                  <Image url="@imgs/bg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="110.0" fitWidth="101.0" layoutX="151.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/CyprusNB_logo_2.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fefefe" layoutX="60.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Protegendo seu dinheiro enquanto você faz seus negócios" wrappingWidth="283.10546875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#fefefe" layoutX="58.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Com a Cyprus National Bank, você pode ter a tranquilidadede que suas informações financeiras estão seguras enquantovocê gerencia seus investimentos e negócios." wrappingWidth="283.10546875">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EFEFEF;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="43.0" layoutY="225.0" prefHeight="50.0" prefWidth="400.0" promptText="Digite seu email" />
+            <Text fill="#1d1d1d" layoutX="126.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seja Bem Vindo!">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="43.0" layoutY="300.0" prefHeight="50.0" prefWidth="400.0" promptText="Digite sua senha" />
+            <Button layoutX="342.0" layoutY="369.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="101.0" style="-fx-background-color: #005ABB;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text fill="#005abb" layoutX="43.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esqueceu a senha?" />
+            <Button layoutX="270.0" layoutY="56.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: transparent; -fx-border-color: #005ABB; -fx-border-width: 0px 0px 2px 0px;" text="Login" />
+            <Button id="cadastroButton" fx:id="cadastroButton" layoutX="364.0" layoutY="56.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Cadastro">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

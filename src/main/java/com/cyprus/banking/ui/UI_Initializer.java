@@ -31,7 +31,7 @@ public class UI_Initializer implements ApplicationListener<StageReadyEvent> {
             Stage stage = event.getStage();
             FXMLLoader loader = new FXMLLoader(resource.getURL());
             Parent root = loader.load();
-            stage.setScene(new Scene(root, 800, 600));
+            stage.setScene(new Scene(root, 900, 600));
             stage.show();
         }catch(IOException e){
             throw new RuntimeException(e);

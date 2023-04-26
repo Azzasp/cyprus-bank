@@ -1,0 +1,8 @@
+#cadastroButton{
+    -fx-background-color:transparent;
+}
+
+#cadastroButton:hover{
+    -fx-border-color: #005ABB;
+    -fx-border-width: 0px 0px 2px 0px;
+}

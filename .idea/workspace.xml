@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ab6346a8-6ec4-4787-9157-6ab81322cada" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/cliente/repositorios/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/cliente/repositorios/ClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/cliente/repositorios/DependenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/cliente/repositorios/DependenteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/gerente/repositorios/GerenteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/models/usuarios/gerente/repositorios/GerenteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/requests/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/requests/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/requests/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/requests/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/validations/ValidatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/backend/security/validations/ValidatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/ui/UI_Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cyprus/banking/ui/UI_Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ui.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +65,11 @@
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Estudo\Java\cyprus-bank\src\main\java\com\cyprus\banking\ui\controllers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="BankingApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cyprus.banking.BankingApplication" />
